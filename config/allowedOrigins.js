@@ -1,5 +1,5 @@
 const allowedOrigins = [
-    'http://localhost:3000'
+    'https://note-management-system.onrender.com/'
 ]
 
-module.exports = allowedOrigins;
+module.exports = allowedOrigins
