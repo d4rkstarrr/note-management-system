@@ -3,6 +3,7 @@ const allowedOrigins = require('./allowedOrigins')
 const corsOptions = {
     origin: (origin, callback) => {
         //Add || !origin to enable requests from sources without an origin like Postman/Swagger
+        console.log("Trying to access from origin: " + origin)
         if(allowedOrigins.indexOf(origin) !== -1){
             callback(null, true);
         }else{
